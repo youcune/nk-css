@@ -1,6 +1,13 @@
 // 半透明のスクリーン
 .alert-background
   background-color: $black-dark
+  position: fixed
+  top: 0px
+  bottom: 0px
+  left: 0px
+  right: 0px
+  opacity: 0.9
+  z-index: 10
 
 // アラート
 .alert
@@ -8,12 +15,27 @@
   height: 320px
   background-color: white
   border: solid 4px $red-700
+  position: fixed
+  left: 50%
+  top: 50%
+  margin-top: -160px
+  margin-left: -240px
+  z-index: 20
 
 // アラートのクローズ
 .alert__close
+  display: inline-block
   background-color: $grey-800
   width: 40px
   height: 40px
+  border-radius: 20px
+  text-align: center
+  line-height: 40px
+  position: fixed
+  top: 50%
+  left: 50%
+  margin-top: -180px
+  margin-left: 225px
 .alert__close-icon
   font-size: 28px
   color: white
@@ -33,6 +55,7 @@
   font-size: 24px
   font-weight: bold
   color: white
+  letter-spacing: 8px
 
 .alert__body
   padding: 24px
