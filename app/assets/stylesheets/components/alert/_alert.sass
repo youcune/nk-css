@@ -2,12 +2,11 @@
 .alert-background
   background-color: $black-dark
   position: fixed
-  top: 0px
-  bottom: 0px
-  left: 0px
-  right: 0px
+  top: 0
+  bottom: 0
+  left: 0
+  right: 0
   opacity: 0.9
-  z-index: 10
 
 // アラート
 .alert
@@ -20,7 +19,8 @@
   top: 50%
   margin-top: -160px
   margin-left: -240px
-  z-index: 20
+  z-index: 1
+  box-sizing: border-box
 
 // アラートのクローズ
 .alert__close
@@ -31,11 +31,9 @@
   border-radius: 20px
   text-align: center
   line-height: 40px
-  position: fixed
-  top: 50%
-  left: 50%
-  margin-top: -180px
-  margin-left: 225px
+  position: absolute
+  top: -20px
+  right: -20px
 .alert__close-icon
   font-size: 28px
   color: white
@@ -56,6 +54,7 @@
   font-weight: bold
   color: white
   letter-spacing: 8px
+  text-indent: 8px
 
 .alert__body
   padding: 24px
