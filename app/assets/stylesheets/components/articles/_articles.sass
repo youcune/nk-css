@@ -1,9 +1,19 @@
+*
+  box-sizing: border-box
 .articles__items
+  font-size: 0px
+  +clearfix
 .articles__item
   margin-bottom: 32px
+  margin-right: 32px
+  float: left
+  width: 341px
 .articles__item-image-container
   margin-bottom: 4px
+  position: relative
 .articles__item-image
+  width: 100%
+  height: auto
 .articles__item-crerated-at
   background-color: $black-dark
   text-align: right
@@ -11,6 +21,11 @@
   padding-right: 8px
   color: $white
   font-size: 14px
+  display: block
+  width: 100%
+  position: absolute
+  bottom: 0px
+  opacity: 0.9
 .articles__item-title
   font-size: 18px
   font-weight: bold
