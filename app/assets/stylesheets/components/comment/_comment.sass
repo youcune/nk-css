@@ -1,5 +1,8 @@
 .comment
+  display: table
 .comment__author
+  display: table-cell
+  width: 152px
 .comment__author-image
   border-radius: 50%
   margin-bottom: 8px
@@ -9,9 +12,22 @@
   width: 104px
   text-align: center
 .comment__body
+  display: table-cell
   background-color: $teal-50
   padding: 18px 24px
+  position: relative
   p
     font-size: 16px
     line-height: 1.6
     margin-bottom: .9em
+  &::after
+    background-color: $teal-50
+    color: $teal-50
+    content: '.'
+    display: block
+    width: 22px
+    height: 20px
+    position: absolute
+    top: 32px
+    left: -11px
+    transform: rotate(45deg)
